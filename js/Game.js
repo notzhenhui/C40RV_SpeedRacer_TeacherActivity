@@ -39,6 +39,8 @@ class Game {
     cars = [car1, car2];
     fuels=new Group();
     powerCoins=new Group();
+    addSprites(fules,4,fuelImage,0.02);
+    addSprites(powerCoins,18,powerCoinimage,0.09)
     
     
   }
@@ -184,6 +186,9 @@ class Game {
     x=random(width/2+150,width/2-150);
     y=random(-height*4.5,height-400);
     var sprite=createSprite(x,y);
+    sprite.addImage("sprite",spriteImage);
+    sprite.scale=scale;
+    spriteGroup.add(sprite);
   }
  
 }
